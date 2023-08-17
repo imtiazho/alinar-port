@@ -1,0 +1,71 @@
+.edit-profile-inner {
+  border: 1px solid #232323;
+  width: 40%;
+  margin: 3rem auto;
+  padding: 2rem;
+}
+
+.left-side .profile {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left-side .profile h3 {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.left-side .profile input#add-photo-btn {
+  display: none;
+}
+
+.left-side .profile .profile-area label {
+  cursor: pointer;
+}
+.left-side .profile .profile-area {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background: #2f3a4a62;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* Responsive  */
+@media screen and (max-width: 1200px) {
+  .edit-profile-inner {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .edit-profile-inner {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .edit-profile-inner {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .edit-profile-inner {
+    width: 90%;
+  }
+  .left-side .profile .profile-area {
+    width: 150px;
+    height: 150px;
+  }
+  .left-side .profile h3 {
+    font-size: 16px;
+    font-weight: 400;
+  }
+  .left-side .profile .profile-area label {
+    font-size: 13px;
+  }
+}

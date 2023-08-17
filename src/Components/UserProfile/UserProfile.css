@@ -1,0 +1,120 @@
+/* Dash Board */
+#dash-board {
+  width: 100%;
+  margin-top: 1rem;
+}
+#dash-board .container {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  padding: 4rem 0;
+  align-items: flex-start;
+}
+#dash-board .container .left-side {
+  border: 1px solid #232323;
+  padding: 2rem 1rem;
+  position: sticky;
+  top: 0;
+}
+#dash-board .container .left-side .profile {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+#dash-board .container .left-side .profile img {
+  border-radius: 8px;
+}
+#dash-board .container .left-side .profile p {
+  color: #bdbdbd;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+#dash-board .container .edit-profile {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+#dash-board .container .edit-profile a {
+  font-size: 14px;
+  color: #678efb;
+}
+
+#dash-board .container .right-side {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+#dash-board .container .right-side .listing-on-rent {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.right-side .items-short-nav {
+  margin: 0rem auto;
+}
+#dash-board .container .left-side .profile img {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media screen and (max-width: 1200px) {
+  #dash-board .container {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  #dash-board .container {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #dash-board .container .left-side {
+    position: static;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #dash-board .container .left-side {
+    width: 70%;
+  }
+  #dash-board .container .right-side .listing-on-rent {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #dash-board .container .right-side .listing-on-rent {
+    padding: 0rem;
+  }
+  .each-row h4 {
+    font-size: 20px;
+  }
+  .my-order .order-preview .each-row {
+    gap: 1rem;
+  }
+  .my-order .order-preview .each-row p,
+  p.confirm-text {
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #dash-board .container .left-side {
+    width: 80%;
+  }
+  .my-order .order-preview .each-row {
+    gap: 0.5rem;
+  }
+}

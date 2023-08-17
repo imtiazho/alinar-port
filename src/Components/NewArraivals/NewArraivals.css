@@ -1,0 +1,109 @@
+.new-arrivals {
+  margin-top: 5rem;
+}
+
+.new-arrivals-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+h2.sention-title {
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-weight: 500;
+  font-size: 26px;
+}
+
+h2.sention-title p {
+  position: absolute;
+  font-size: 110px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  z-index: -100;
+  color: #25252530;
+}
+
+.items-short-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: max-content;
+  margin: 4rem auto;
+  gap: 2rem;
+}
+
+.items-short-nav div {
+  display: inline-block;
+}
+
+.items-short-nav div a {
+  padding: 5px 10px;
+}
+
+.checkout-btn {
+  display: flex;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.btn-2,
+.btn-2-disabled {
+  display: block;
+  font-weight: 400;
+  margin: 2rem auto;
+  padding: 10px 15px;
+  text-align: center;
+  width: 200px;
+}
+
+.btn-2 {
+  background-color: #eebf0e;
+  color: #000;
+  cursor: pointer;
+}
+
+/* Respinsive design start Here  */
+@media screen and (max-width: 1200px) {
+  .new-arrivals-container {
+    width: 90%;
+  }
+  h2.sention-title p {
+    font-size: 95px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .items-short-nav {
+    gap: 1.4rem;
+    margin: 3rem auto 2rem auto;
+  }
+  h2.sention-title {
+    font-size: 22px;
+  }
+  h2.sention-title p {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .items-short-nav div a {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .new-arrivals-container {
+    width: 95%;
+  }
+  h2.sention-title {
+    font-size: 20px;
+  }
+  h2.sention-title p {
+    font-size: 70px;
+  }
+  .new-arrivals {
+    margin-top: 3.5rem;
+  }
+}

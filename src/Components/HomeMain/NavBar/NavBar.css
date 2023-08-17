@@ -1,0 +1,233 @@
+.main-nav {
+  box-shadow: 0 0 16px rgb(0 0 0 / 15%);
+}
+
+.nav-container {
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.nav-container,
+.nav-items,
+.log-cart,
+.log-cart li {
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  justify-content: space-between;
+  height: 5rem;
+  gap: 5rem;
+}
+
+.menu-log-cart {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+img.logo {
+  width: 180px;
+}
+
+.nav-items {
+  gap: 4rem;
+}
+
+.log-cart {
+  gap: 1rem;
+  align-items: center;
+}
+
+.log-cart .cart-icon,
+.log-cart .login-icon {
+  width: 35px;
+  height: 35px;
+  justify-content: center;
+  background-color: #eebf0e;
+}
+
+.log-cart li a {
+  font-size: 19px;
+  color: #000;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-length {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: red;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 13px;
+}
+
+li.user-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 1rem;
+  border: 2px solid #eebf0e;
+  cursor: pointer;
+}
+
+.user-settings {
+  position: absolute;
+  max-width: 350px;
+  width: 90%;
+  background-color: #fff;
+  color: #000;
+  top: 106%;
+  right: 0rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  border-radius: 4px;
+  z-index: 100;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.user-profile p {
+  margin-bottom: -5px;
+  font-weight: 500;
+  color: #626262;
+  cursor: pointer;
+}
+
+.user-profile p a {
+  font-size: 12px;
+  color: #1876f2;
+}
+
+.setting-menu-inner {
+  padding: 20px;
+}
+
+.user-settings hr {
+  border: none;
+  height: 1px;
+  background: #9a9a9a;
+  margin: 15px 0;
+}
+
+.user-settings button {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+  background-color: #fff;
+  font-size: 16px;
+  color: #626262;
+}
+
+.setting-links span img {
+  width: 50px;
+}
+
+.setting-links span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+img.arrow {
+  width: 12px;
+}
+
+.responsive-navBar {
+  display: none;
+  cursor: pointer;
+  z-index: 11;
+}
+
+@media only screen and (max-width: 1220px) {
+  .nav-container {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .nav-items {
+    display: none;
+  }
+  .nav-Open {
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #000;
+    z-index: 10;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .responsive-navBar {
+    display: block;
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  img.logo {
+    width: 160px;
+  }
+  li.user-icon {
+    width: 50px;
+    height: 50px;
+    margin-left: 0.3rem;
+  }
+  .user-settings {
+    width: 280px;
+    z-index: 100;
+  }
+  .setting-links span img {
+    width: 40px;
+  }
+  .setting-links span {
+    gap: 0.5rem;
+  }
+  img.arrow {
+    width: 10px;
+  }
+  .user-settings button {
+    margin: 15px 0 0px;
+  }
+  .setting-menu-inner {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  img.logo {
+    width: 150px;
+  }
+}
