@@ -45,8 +45,9 @@ const ProductCard = ({ product, index }) => {
     } else if (handCodedId?.includes("shopProducts")) {
         path = "shopProductDetail";
     }
+    // data-aos="fade-up" data-aos-duration="1000"
     return (
-        <Link data-aos="fade-up" data-aos-duration="1000" to={`/${path}/${_id}`} className="product-card">
+        <Link to={`/${path}/${_id}`} className="product-card">
             <img className='card-image' src={img} alt="" />
 
             <div className="product-short-info">

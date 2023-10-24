@@ -5,6 +5,7 @@ import './About.css';
 
 
 const About = () => {
+    // const CSE24 =
     return (
         <div className='about'>
             {/* <HelmetComponent pageName={"alinar - about"} /> */}
